@@ -1,0 +1,364 @@
+/* ------------------------------------------------------------ */
+/* imports and utilities */
+
+/* 3rd-party CSS files */
+@import 'vendor/h5bp-head.css';
+@import 'vendor/normalize.css';
+@import 'vendor/h5bp-tail.css';
+
+/* use a more intuitive box sizing model (http://is.gd/wNVjAo) */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* Scale down images and embedded videos so they don't overflow their parents */
+img, object { max-width: 100%; }
+
+/*	Development/layout aid. Remove the comments
+	on this rule in order to draw boxes around DIVs
+	and other elements used for layout. */
+/*
+div, main, article, section, aside, hgroup, header, footer, address, nav {
+	border: 1px solid rgba(255,0,0,0.15) !important;
+	background: rgba(255,0,0,0.05) !important;
+}
+*/
+
+
+/* ------------------------------------------------------------ */
+/* this is for the homepage */
+
+.homepage {
+	font-family: 'Source Code Pro', monospace;
+	font-size: 16px;
+	line-height: 1.5em;
+	background-color: black;
+	background-image: url("../img/pattern.png");
+}
+
+/* this is for every other page */
+
+.page {
+	font-family: 'Source Code Pro', monospace;
+	font-size: 16px;
+	line-height: 1.5em;
+	background-color: black;
+}
+
+/*  homepage navbar*/
+
+.homenav {
+	font-family: 'Source Code Pro';
+	margin-top: 0em;
+	padding-top: 0em;
+	margin-right: 0;
+	grid-column: 2/4;
+	grid-row: 2/3;
+
+}
+
+.global ul {
+	list-style-type: none;
+	padding: 0;
+	display: flex;
+
+}
+
+.global li {
+	display: block;
+	flex-basis: 300px;
+	flex-grow: 1;
+	flex-shrink: 1;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	margin: .5em;
+	background-color: #1D523A;
+
+}
+
+.global a {
+	font-family: 'Source Code Pro', monospace;
+}
+
+.global a:link{
+	text-decoration: none;
+
+}
+
+.global li:hover {
+	background: #C4FFDD;
+	transition: all 1.5s;
+}
+
+
+
+/*  homepage stuff*/
+.BIGtitle {
+	color: white;
+	text-align: center;
+	font-size: 40px;
+	max-width: 30%;
+	margin-left: 35%;
+	margin-right: 35%;
+	margin-top: 25vh;
+	margin-bottom: .02em;
+	padding: .02em;
+	grid-column: 2/4;
+}
+
+.intro {
+	color: #1D523A;
+	background-color: white;
+	text-align: center;
+	padding-top: 2em;
+	grid-column: 1/5;
+	grid-row: 3/4;
+}
+
+.computer {
+	grid-row: 3/4;
+	max-height: 90vh;
+	z-index: 2;
+	padding-bottom: 0em;
+	margin-bottom: 0em;
+	padding-top: 2em;
+}
+
+/* register form stuff */
+* {box-sizing: border-box}
+
+.regbox {
+  padding: 16px;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+hr {
+  border: 2px solid #C4FFDD;
+  margin-bottom: 25px;
+}
+
+
+form {
+	background-color: white;
+	grid-row: 3/4;
+	grid-column: 2/4;
+
+}
+.register {
+  background-color:  #1D523A;
+	font-family: 'Source Code Pro', monospace;
+	color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  width: 100%;
+}
+
+.register:hover {
+  opacity:4;
+}
+
+.forminfo {
+	color: #1D523A;
+}
+
+.regtitle{
+	color: white;
+	text-align: center;
+	grid-column: 2/4;
+	font-size: 40px;
+}
+
+label{
+	color: #1D523A;
+}
+
+
+
+/*	Generally, you will only want one container element in
+	the document, wrapping around the main content area.
+	If you have more than one container, you are probably doing
+	something wrong.
+*/
+
+
+
+/* ------------------------------------------------------------ */
+/* media query containing styles for larger screens */
+@media (min-width: 720px) {
+
+	/* container on larger screens */
+
+	.homepage {
+		display: grid;
+		grid-template-columns: .75fr 1fr 1fr .75fr;
+		grid-template-rows: .05fr .05fr .02fr;
+		margin: 0em;
+	}
+
+	.page {
+		display: grid;
+		grid-template-columns: .8fr .8fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+		grid-column-gap: 2em;
+	}
+
+	/*  every other page's navbar*/
+
+	.pageglobal ul {
+		list-style-type: none;
+		padding: 0;
+		grid-column: 1/2;
+		font-family:
+	}
+
+	.pageglobal li {
+		display: block;
+		color: white;
+		text-align: center;
+		text-transform: uppercase;
+		padding: 1.5em;
+		margin: 1em;
+		background-color: #1D523A;
+
+	}
+
+	.pageglobal a:link{
+		text-decoration: none;
+	}
+
+	.pageglobal li:hover {
+		background: black;
+		transition: all 1.5s;
+	}
+
+	.sidebar {
+		grid-column: 1/2;
+		grid-row: 1/2;
+		z-index: 2;
+		max-width: 10em;
+		margin-left: 6em;
+		margin-top: 5em;
+	}
+
+	.green {
+		grid-row: 1/5;
+		grid-column: 1/2;
+	}
+
+	.global li {
+		flex: wrap;
+	}
+
+	/*  speakers page stuffs*/
+
+.mickens {
+		grid-row: 1/2;
+		grid-column: 2/3;
+		max-width: 50%;
+		margin-top: 2em;
+}
+
+ .mickens1 {
+	 grid-row: 1/2;
+	 grid-column: 2/3;
+	 color: white;
+	 margin-bottom: 2em;
+	 margin-top: 35vh;
+}
+ .mickens2 {
+   grid-row: 1/2;
+	 grid-column: 2/3;
+	 color: white;
+	 margin-top: 4em;
+	 margin-right: 6em;
+	 margin-top: 40vh;
+}
+
+.montiero {
+		grid-row: 2/3;
+		grid-column: 2/3;
+		max-width: 50%;
+		margin-top: 2em;
+	}
+
+	.montiero1 {
+		grid-row: 2/3;
+		grid-column: 2/3;
+		color: white;
+		margin-bottom: 2em;
+		margin-top: 35vh;
+	}
+	.montiero2 {
+		grid-row: 2/3;
+		grid-column: 2/3;
+		color: white;
+		margin-top: 4em;
+		margin-right: 6em;
+		margin-top: 40vh;
+	}
+
+.susan {
+	grid-row: 3/4;
+	grid-column: 2/3;
+	max-width: 50%;
+	margin-top: 2em;
+ }
+
+	.susan1 {
+		grid-row: 3/4;
+		grid-column: 2/3;
+		color: white;
+		margin-bottom: 2em;
+		margin-top: 35vh;
+	}
+
+	.susan2 {
+		grid-row: 3/4;
+		grid-column: 2/3;
+		color: white;
+		margin-top: 4em;
+		margin-right: 6em;
+		margin-top: 40vh;
+	}
+
+.ethan {
+	grid-row: 4/5;
+	grid-column: 2/3;
+	max-width: 50%;
+	margin-top: 2em;
+}
+
+  .ethan1 {
+		grid-row: 4/5;
+		grid-column: 2/3;
+		color: white;
+		margin-bottom: 2em;
+		margin-top: 35vh;
+	}
+
+	.ethan2 {
+		grid-row: 3/4;
+		grid-column: 2/3;
+		color: white;
+		margin-top: 4em;
+		margin-right: 6em;
+	}
+
+
+} /* end media query */
