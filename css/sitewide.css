@@ -24,7 +24,7 @@ div, main, article, section, aside, hgroup, header, footer, address, nav {
 
 
 /* ------------------------------------------------------------ */
-/* this is for the homepage */
+/* this is for the homepage/registration */
 
 .homepage {
 	font-family: 'Source Code Pro', monospace;
@@ -41,7 +41,35 @@ div, main, article, section, aside, hgroup, header, footer, address, nav {
 	font-size: 16px;
 	line-height: 1.5em;
 	background-color: black;
+	display: grid;
+	grid-template-columns: 1fr;
 }
+
+.page3 {
+	font-family: 'Source Code Pro', monospace;
+	font-size: 16px;
+	line-height: 1.5em;
+	background-color: black;
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.schedule {
+	grid-column: 1/4;
+	margin-top: 0em;
+	padding-top: 0em;
+}
+
+
+/* this is for registrationpt2 */
+.page2 {
+	font-family: 'Source Code Pro', monospace;
+	font-size: 16px;
+	line-height: 1.5em;
+	background-color: black;
+	background-image: url("../img/pattern.png");
+}
+
 
 /*  homepage navbar*/
 
@@ -82,7 +110,7 @@ div, main, article, section, aside, hgroup, header, footer, address, nav {
 }
 
 .global a:link{
-	text-decoration: none;
+		text-decoration: none;
 
 }
 
@@ -91,6 +119,290 @@ div, main, article, section, aside, hgroup, header, footer, address, nav {
 	transition: all 1.5s;
 }
 
+.pageglobal ul {
+	list-style-type: none;
+	padding: 0;
+	display: flex;
+}
+
+.pageglobal li {
+	display: block;
+	flex-basis: 300px;
+	flex-grow: 1;
+	flex-shrink: 1;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	margin: .5em;
+	background-color: #1D523A;
+
+}
+
+.pageglobal a:link{
+	font-family: 'Source Code Pro', monospace;
+	text-decoration: none;
+}
+
+.pageglobal li:hover {
+	background: #C4FFDD;
+	transition: all 1.5s;
+}
+
+.sidebar {
+	font-family: 'Source Code Pro';
+	margin-top: 0em;
+	padding-top: 0em;
+	margin-right: 0;
+	grid-column: 1/4;
+	grid-row: 1/2;
+
+}
+
+/* speakers page on mobile */
+
+.green {
+	display: none;
+}
+
+.mickens {
+		grid-row: 2/3;
+		grid-column: 1/4;
+		max-width: 50%;
+		margin-top: 2em;
+		margin-left: auto;
+		margin-right: auto;
+}
+
+ 	.mickens1 {
+	 	grid-row: 2/3;
+	 	grid-column: 1/4;
+	 	color: white;
+	 	margin-bottom: 2em;
+	 	margin-top: 52vh;
+		margin-left: 1em;
+}
+ 	.mickens2 {
+   	grid-row: 2/3;
+	 	grid-column: 1/4;
+	 	color: white;
+	 	margin-top: 4em;
+	 	margin-right: 4em;
+	 	margin-top: 58vh;
+		margin-left: 1em;
+}
+
+.montiero {
+		grid-row: 3/4;
+		grid-column: 1/4;
+		max-width: 50%;
+		margin-top: 2em;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.montiero1 {
+		grid-row: 3/4;
+		grid-column: 1/4;
+		color: white;
+		margin-bottom: 2em;
+		margin-top: 52vh;
+		margin-left: 1em;
+	}
+	.montiero2 {
+		grid-row: 3/4;
+		grid-column: 1/4;
+		color: white;
+		margin-top: 4em;
+		margin-top: 4em;
+	 	margin-right: 4em;
+		margin-top: 58vh;
+		margin-left: 1em;
+	}
+
+.susan {
+	grid-row: 4/5;
+	grid-column: 1/4;
+	max-width: 50%;
+	margin-top: 2em;
+	margin-left: auto;
+	margin-right: auto;
+ }
+
+	.susan1 {
+		grid-row: 4/5;
+		grid-column: 1/4;
+		color: white;
+		margin-bottom: 2em;
+		margin-top: 52vh;
+		margin-left: 1em;
+	}
+
+	.susan2 {
+		grid-row: 4/5;
+		grid-column: 1/4;
+		color: white;
+		margin-top: 4em;
+		margin-top: 4em;
+		margin-right: 4em;
+		margin-top: 58vh;
+		margin-left: 1em;
+	}
+
+.ethan {
+	grid-row: 5/6;
+	grid-column: 1/4;
+	max-width: 50%;
+	margin-top: 2em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+  .ethan1 {
+		grid-row: 5/6;
+		grid-column: 1/4;
+		color: white;
+		margin-bottom: 2em;
+		margin-top: 52vh;
+		margin-left: 1em;
+	}
+
+	.ethan2 {
+		grid-row: 5/6;
+		grid-column: 1/4;
+		color: white;
+		margin-top: 4em;
+		margin-top: 4em;
+		margin-right: 4em;
+	  margin-top: 58vh;
+		margin-left: 1em;
+	}
+
+.tim {
+	grid-row: 6/7;
+	grid-column: 1/4;
+	max-width: 50%;
+	margin-top: 2em;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+	 .tim1 {
+		grid-row: 6/7;
+		grid-column: 1/4;
+		color: white;
+		margin-bottom: 2em;
+		margin-top: 52vh;
+		margin-left: 1em;
+	}
+
+		.tim2 {
+			grid-row: 6/7;
+			grid-column: 1/4;
+			color: white;
+			margin-top: 4em;
+			margin-right: 6em;
+			margin-top: 58vh;
+			margin-left: 1em;
+		}
+
+.zuckerman {
+	grid-row: 7/8;
+	grid-column: 1/4;
+	max-width: 50%;
+	margin-top: 2em;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+		.zuckerman1 {
+			grid-row: 7/8;
+			grid-column: 1/4;
+			color: white;
+			margin-bottom: 2em;
+			margin-top: 52vh;
+			margin-left: 1em;
+		}
+
+		.zuckerman2 {
+			grid-row: 7/8;
+			grid-column: 1/4;
+			color: white;
+			margin-top: 4em;
+			margin-right: 6em;
+			margin-top: 58vh;
+			margin-left: 1em;
+		}
+
+
+.zoe {
+		grid-row: 8/9;
+		grid-column: 1/4;
+		max-width: 50%;
+		margin-top: 2em;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+			.zoe1 {
+				grid-row: 8/9;
+				grid-column: 1/4;
+				color: white;
+				margin-bottom: 2em;
+				margin-top: 52vh;
+				margin-left: 1em;
+			}
+
+				.zoe2 {
+					grid-row: 8/9;
+					grid-column: 1/4;
+					color: white;
+					margin-top: 4em;
+					margin-right: 6em;
+					margin-top: 58vh;
+					margin-left: 1em;
+				}
+
+
+/*  info page on mobile*/
+.map {
+	max-height: 50%;
+	max-width: 70%;
+	grid-column: 1/4;
+	grid-row: 2/4;
+	margin-left: 15vh;
+	margin-top: 25vh;
+}
+
+.title {
+	text-align: center;
+	color: white;
+	grid-column: 1/4;
+	grid-row: 2/3;
+	line-height: 1em;
+}
+
+.info {
+	text-align: center;
+	color: white;
+	grid-column: 1/4;
+	grid-row: 3/4;
+	margin-top: 62vh;
+	margin-left: .5em;
+	margin-right: .5em;
+}
+
+.note {
+	padding-top: 5em;
+	text-align: center;
+	color: white;
+	grid-column: 1/4;
+	grid-row: 3/4;
+	margin-top: 60vh;
+	margin-left: .5em;
+	margin-right: .5em;
+}
 
 
 /*  homepage stuff*/
@@ -99,7 +411,7 @@ div, main, article, section, aside, hgroup, header, footer, address, nav {
 	text-align: center;
 	font-size: 40px;
 	max-width: 30%;
-	margin-left: 35%;
+	margin-left: 30%;
 	margin-right: 35%;
 	margin-top: 25vh;
 	margin-bottom: .02em;
@@ -188,6 +500,25 @@ label{
 	color: #1D523A;
 }
 
+.thankyou {
+	background-color: white;
+	text-align: left;
+	color: #1D523A;
+	grid-column: 2/4;
+	grid-row: 1/4;
+	padding-left: 2em;
+	padding-right: 2em;
+	padding-top: 30%;
+	padding-bottom: 60%;
+}
+
+.schedule {
+	color: white;
+	grid-column: 2/4;
+	text-align: center;
+	padding: 2em;
+	margin-top: 4em;
+}
 
 
 /*	Generally, you will only want one container element in
@@ -215,6 +546,20 @@ label{
 		display: grid;
 		grid-template-columns: .8fr .8fr 1fr;
 		grid-template-rows: 1fr 1fr 1fr 1fr;
+		grid-column-gap: 2em;
+	}
+
+	.page2 {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr ;
+		margin:0em;
+	}
+
+	.page3 {
+		display: grid;
+		grid-template-columns: .8fr .8fr 1fr;
+		grid-template-rows: 1fr;
 		grid-column-gap: 2em;
 	}
 
@@ -254,15 +599,50 @@ label{
 		max-width: 10em;
 		margin-left: 6em;
 		margin-top: 5em;
+		position: fixed;
 	}
 
 	.green {
 		grid-row: 1/5;
 		grid-column: 1/2;
+
 	}
 
 	.global li {
 		flex: wrap;
+	}
+
+	.map {
+		max-width: 100%;
+		grid-column: 2/4;
+		grid-row: 1/4;
+		margin-left: 15vh;
+		margin-top: 25vh;
+	}
+
+	.title {
+		text-align: center;
+		color: white;
+		grid-column: 2/4;
+		grid-row: 1/2;
+		margin: 2em;
+		padding-top: 10vh;
+	}
+
+	.info {
+		text-align: center;
+		color: white;
+		grid-column: 2/4;
+		grid-row: 3/5;
+		padding-top: 2em;
+	}
+
+	.note {
+		padding-top: 5em;
+		text-align: center;
+		color: white;
+		grid-column: 2/4;
+		grid-row: 3/5;
 	}
 
 	/*  speakers page stuffs*/
@@ -274,20 +654,20 @@ label{
 		margin-top: 2em;
 }
 
- .mickens1 {
-	 grid-row: 1/2;
-	 grid-column: 2/3;
-	 color: white;
-	 margin-bottom: 2em;
-	 margin-top: 35vh;
+ 	.mickens1 {
+	 	grid-row: 1/2;
+	 	grid-column: 2/3;
+	 	color: white;
+	 	margin-bottom: 2em;
+	 	margin-top: 35vh;
 }
- .mickens2 {
-   grid-row: 1/2;
-	 grid-column: 2/3;
-	 color: white;
-	 margin-top: 4em;
-	 margin-right: 6em;
-	 margin-top: 40vh;
+ 	.mickens2 {
+   	grid-row: 1/2;
+	 	grid-column: 2/3;
+	 	color: white;
+	 	margin-top: 4em;
+	 	margin-right: 4em;
+	 	margin-top: 40vh;
 }
 
 .montiero {
@@ -309,7 +689,8 @@ label{
 		grid-column: 2/3;
 		color: white;
 		margin-top: 4em;
-		margin-right: 6em;
+		margin-top: 4em;
+	 	margin-right: 4em;
 		margin-top: 40vh;
 	}
 
@@ -333,7 +714,8 @@ label{
 		grid-column: 2/3;
 		color: white;
 		margin-top: 4em;
-		margin-right: 6em;
+		margin-top: 4em;
+		margin-right: 4em;
 		margin-top: 40vh;
 	}
 
@@ -353,12 +735,90 @@ label{
 	}
 
 	.ethan2 {
-		grid-row: 3/4;
+		grid-row: 4/5;
 		grid-column: 2/3;
 		color: white;
 		margin-top: 4em;
-		margin-right: 6em;
+		margin-top: 4em;
+		margin-right: 4em;
+		margin-top: 40vh;
 	}
+
+.tim {
+	grid-row: 1/2;
+	grid-column: 3/4;
+	max-width: 40%;
+	margin-top: 2em;
+	}
+
+	  .tim1 {
+			grid-row: 1/2;
+			grid-column: 3/4;
+			color: white;
+			margin-bottom: 2em;
+			margin-top: 35vh;
+		}
+
+		.tim2 {
+			grid-row: 1/2;
+			grid-column: 3/4;
+			color: white;
+			margin-top: 4em;
+			margin-right: 6em;
+			margin-top: 40vh;
+			padding-right: 4em;
+		}
+
+.zuckerman {
+	grid-row: 2/3;
+	grid-column: 3/4;
+	max-width: 40%;
+	margin-top: 2em;
+	}
+
+			.zuckerman1 {
+				grid-row: 2/3;
+				grid-column: 3/4;
+				color: white;
+				margin-bottom: 2em;
+				margin-top: 35vh;
+			}
+
+			.zuckerman2 {
+				grid-row: 2/3;
+				grid-column: 3/4;
+				color: white;
+				margin-top: 4em;
+				margin-right: 6em;
+				margin-top: 40vh;
+				padding-right: 4em;
+			}
+
+
+.zoe {
+		grid-row: 3/4;
+		grid-column: 3/4;
+		max-width: 40%;
+		margin-top: 2em;
+				}
+
+				.zoe1 {
+					grid-row: 3/4;
+					grid-column: 3/4;
+					color: white;
+					margin-bottom: 2em;
+					margin-top: 35vh;
+						}
+
+					.zoe2 {
+						grid-row: 3/4;
+						grid-column: 3/4;
+						color: white;
+						margin-top: 4em;
+						margin-right: 6em;
+						margin-top: 40vh;
+						padding-right: 4em;
+						}
 
 
 } /* end media query */
