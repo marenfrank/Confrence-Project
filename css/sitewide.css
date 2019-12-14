@@ -25,7 +25,92 @@ div, main, article, section, aside, hgroup, header, footer, address, nav {
 
 /* ------------------------------------------------------------ */
 /* this is for the homepage/registration */
+@media (max-width: 720px) {
 
+.green {
+	display: none;
+}
+
+.pageglobal ul {
+list-style-type: none;
+padding: 0;
+display: flex;
+}
+
+.pageglobal li {
+display: block;
+flex-basis: 300px;
+flex-grow: 1;
+flex-shrink: 1;
+color: white;
+text-align: center;
+text-transform: uppercase;
+padding-top: 1.5em;
+padding-bottom: 1.5em;
+margin: .5em;
+background-color: #1D523A;
+
+}
+
+.pageglobal a:link{
+font-family: 'Source Code Pro', monospace;
+text-decoration: none;
+}
+
+.pageglobal li:hover {
+background: #C4FFDD;
+transition: all 1.5s;
+}
+
+.sidebar {
+font-family: 'Source Code Pro';
+margin-top: 0em;
+padding-top: 0em;
+margin-right: 0;
+grid-column: 1/4;
+grid-row: 1/2;
+}
+
+.map {
+	max-height: 50%;
+	max-width: 70%;
+	grid-column: 1/4;
+	grid-row: 2/4;
+	margin-left: 15vh;
+	margin-top: 25vh;
+}
+
+.title {
+	text-align: center;
+	color: white;
+	grid-column: 1/4;
+	grid-row: 2/3;
+	line-height: 1em;
+}
+
+.info {
+	text-align: center;
+	color: white;
+	grid-column: 1/4;
+	grid-row: 3/4;
+	margin-top: 62vh;
+	margin-left: .5em;
+	margin-right: .5em;
+}
+
+.note {
+	padding-top: 5em;
+	text-align: center;
+	color: white;
+	grid-column: 1/4;
+	grid-row: 3/4;
+	margin-top: 60vh;
+	margin-left: .5em;
+	margin-right: .5em;
+}
+
+
+}
 
 .homepage {
 	font-family: 'Source Code Pro', monospace;
@@ -120,53 +205,12 @@ div, main, article, section, aside, hgroup, header, footer, address, nav {
 	transition: all 1.5s;
 }
 
-/* all of this messes up my larger screen pages 
-	.pageglobal ul {
-	list-style-type: none;
-	padding: 0;
-	display: flex;
-}
 
-.pageglobal li {
-	display: block;
-	flex-basis: 300px;
-	flex-grow: 1;
-	flex-shrink: 1;
-	color: white;
-	text-align: center;
-	text-transform: uppercase;
-	padding-top: 1.5em;
-	padding-bottom: 1.5em;
-	margin: .5em;
-	background-color: #1D523A;
 
-}
-
-.pageglobal a:link{
-	font-family: 'Source Code Pro', monospace;
-	text-decoration: none;
-}
-
-.pageglobal li:hover {
-	background: #C4FFDD;
-	transition: all 1.5s;
-}
-
-.sidebar {
-	font-family: 'Source Code Pro';
-	margin-top: 0em;
-	padding-top: 0em;
-	margin-right: 0;
-	grid-column: 1/4;
-	grid-row: 1/2;
-
-}
 
 /* speakers page on mobile */
 
-/*.green {
-	display: none;
-}
+
 
 .mickens {
 		grid-row: 2/3;
@@ -368,43 +412,6 @@ div, main, article, section, aside, hgroup, header, footer, address, nav {
 
 
 /*  info page on mobile*/
-/*.map {
-	max-height: 50%;
-	max-width: 70%;
-	grid-column: 1/4;
-	grid-row: 2/4;
-	margin-left: 15vh;
-	margin-top: 25vh;
-}
-
-.title {
-	text-align: center;
-	color: white;
-	grid-column: 1/4;
-	grid-row: 2/3;
-	line-height: 1em;
-}
-
-.info {
-	text-align: center;
-	color: white;
-	grid-column: 1/4;
-	grid-row: 3/4;
-	margin-top: 62vh;
-	margin-left: .5em;
-	margin-right: .5em;
-}
-
-.note {
-	padding-top: 5em;
-	text-align: center;
-	color: white;
-	grid-column: 1/4;
-	grid-row: 3/4;
-	margin-top: 60vh;
-	margin-left: .5em;
-	margin-right: .5em;
-}
 
 
 /*  homepage stuff*/
@@ -618,8 +625,8 @@ label{
 		max-width: 100%;
 		grid-column: 2/4;
 		grid-row: 1/4;
-		margin-left: 15vh;
-		margin-top: 25vh;
+		margin-left: 6em;
+		margin-top: 11em;
 	}
 
 	.title {
